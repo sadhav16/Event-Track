@@ -10,4 +10,4 @@ This configuration is crucial for the application to establish a connection with
 ## Running the Application
 To run the program, execute the following file:
 
-Path: com/hartsad/hartRace/HartRaceApplication.java
+Path: hartRace/HartRaceApplication.java
