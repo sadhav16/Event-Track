@@ -23,7 +23,7 @@ Root URL: http://localhost:8080/api/hart
 
 **To add a new contestant to the event, use the following endpoint:**
 
-`POST /api/hart`
+`POST /`
 
 **Request Body:** JSON
 
@@ -31,7 +31,7 @@ Root URL: http://localhost:8080/api/hart
 
 **To update an existing contestant's details, use the following endpoint:**
 
-`PUT /api/contestants/{id}`
+`PUT /{id}`
 
 **Request Body:** JSON
 
@@ -39,13 +39,13 @@ Root URL: http://localhost:8080/api/hart
 
 **To delete a contestant from the event, use the following endpoint:**
 
-`DELETE /api/hart/{id}`
+`DELETE /{id}`
 
 ## Get All Contestants (GET)
 
 **To retrieve all contestants, use the following endpoint:**
 
-`GET /api/hart`
+`GET /`
 
 ## Auto Generate Contestants (POST)
 
