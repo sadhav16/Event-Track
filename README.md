@@ -73,6 +73,7 @@ Root URL: http://localhost:8080/api/hart
 **To retrieve contestants by item, use the following endpoint:**
 
 `GET /api/hart/getitemcontestents/{item}`
+
 **Response:** JSON
 
 ## Get Event Contestants (GET)
@@ -96,6 +97,7 @@ Root URL: http://localhost:8080/api/hart
 **To simulate/get all contestants for a particular event, use the following endpoint:**
 
 `GET /api/hart/simulateevent`
+
 **Request Parameters:**
 - **event**: The event to simulate. Required.
 - **item**: The item to simulate. Required.
@@ -122,6 +124,7 @@ Root URL: http://localhost:8080/api/hart
 **To retrieve the contestant with the top number of medals, use the following endpoint:**
 
 `GET /api/hart/topmedalist`
+
 **Response:** JSON
 
 ## Top Points Contestant (GET)
@@ -129,6 +132,7 @@ Root URL: http://localhost:8080/api/hart
 **To retrieve the top contestant based on points for a specific gender, use the following endpoint:**
 
 `GET /api/hart/topcontestant/{gender}`
+
 **Response:** JSON
 
 ## Top Nation (GET)
@@ -136,6 +140,7 @@ Root URL: http://localhost:8080/api/hart
 **To retrieve the nation with the highest number of medals, use the following endpoint:**
 
 `GET /api/hart/topnation`
+
 **Response:** JSON
 
 ## Top N Nations (GET)
@@ -155,6 +160,7 @@ Root URL: http://localhost:8080/api/hart
 **To retrieve nation rankings based on specific criteria, use the following endpoint:**
 
 `GET /api/hart/nationrankings`
+
 **Request Parameters:**
 - **type**: The type of statistics to retrieve. Required.
 - **criteria**: The criteria for ranking. Required.
@@ -166,6 +172,7 @@ Root URL: http://localhost:8080/api/hart
 **To simulate all events and add contestants, use the following endpoint:**
 
 `GET /api/hart/simulateall`
+
 **Response:** JSON
 
 ---
