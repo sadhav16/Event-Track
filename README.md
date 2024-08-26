@@ -22,7 +22,7 @@ Root URL: http://localhost:8080/api/hart
 9. [Top Medalist (GET)](#top-medalist-get)
 10. [Top Points Contestant (GET)](#top-points-contestant-get)
 11. [Top Nation (GET)](#top-nation-get)
-12. [Top N Nations (GET)](#top-nations-get)
+12. [Top N Nations (GET)](#top-n-nations-get)
 13. [Nation Rankings (GET)](#nation-rankings-get)
 14. [Simulate All Events (GET)](#simulate-all-events-get)
 
@@ -168,7 +168,7 @@ Root URL: http://localhost:8080/api/hart
 `GET /api/hart/simulateall`
 **Response:** JSON
 
-
+---
 
 ## Running the Application
 To run the program, execute the following file:
