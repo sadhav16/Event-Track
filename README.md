@@ -94,20 +94,7 @@ Root URL: http://localhost:8080/api/hart
 
 ## Simulate Event (GET)
 
-**To simulate/get all contestants for a particular event, use the following endpoint:**
-
-`GET /api/hart/simulateevent`
-
-**Request Parameters:**
-- **event**: The event to simulate. Required.
-- **item**: The item to simulate. Required.
-- **gender**: Optional. The gender to filter by.
-
-**Response:** JSON
-
-## Simulate Event (GET)
-
-**To simulate/get all contestants for a particular event, use the following endpoint:**
+**To simulate a particular event, use the following endpoint:**
 
 `GET /api/hart/simulateevent`
 
@@ -169,7 +156,7 @@ Root URL: http://localhost:8080/api/hart
 
 ## Simulate All Events (GET)
 
-**To simulate all events and add contestants, use the following endpoint:**
+**To simulate all events and award contestants, use the following endpoint:**
 
 `GET /api/hart/simulateall`
 
