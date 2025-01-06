@@ -11,7 +11,7 @@ public interface ContestantService {
     List<ContestantDto> getAllEmployees();
     ContestantDto updateEmployee(Long Id, ContestantDto updatedemployee);
     void deleteEmployee(Long Id);
-    void generateAndSaveRegistrations();
+    void generateAndSaveRegistrations(int count);
 
     List<ContestantDto> eventContestants(String event);
     List<ContestantDto> itemParticipants(String item);

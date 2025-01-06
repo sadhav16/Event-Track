@@ -55,11 +55,11 @@ public class ContestantController {
     }
 
 
-    //generate 1000 default contestants
+    //generate 5000 default contestants
     @PostMapping("/generate")
-    public ResponseEntity<String> generateEmployees(@RequestParam(defaultValue = "10") int count) {
-        contestantService.generateAndSaveRegistrations();
-        return ResponseEntity.ok("5000 contestants added");
+    public ResponseEntity<String> generateEmployees(@RequestParam(defaultValue = "5000") int count) {
+        contestantService.generateAndSaveRegistrations(count);
+        return ResponseEntity.ok(count+" contestants added");
     }
 
     //get item contestants for a particular item

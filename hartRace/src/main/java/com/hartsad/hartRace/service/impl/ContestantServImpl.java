@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -99,8 +100,8 @@ public class ContestantServImpl implements ContestantService {
     private final Faker faker = new Faker();
     //private final CustomKeyGenerator keyGenerator = new CustomKeyGenerator();
     @Transactional
-    public void generateAndSaveRegistrations() {
-        IntStream.range(0, 5000).forEach(i -> {
+    public void generateAndSaveRegistrations(int count) {
+        IntStream.range(0, count).forEach(i -> {
             ContestantDto emp = new ContestantDto();
             emp.setId((long) faker.number().numberBetween(1,Integer.MAX_VALUE));
             emp.setFName(faker.name().firstName());
@@ -124,7 +125,8 @@ public class ContestantServImpl implements ContestantService {
 
             ));
             emp.setIsocode(faker.address().countryCode());
-            emp.setCname(faker.country().name());
+            Locale locale = new Locale("",emp.getIsocode());
+            emp.setCname(locale.getDisplayCountry());
             checkCountryReg(emp.getIsocode(),emp.getCname());
 
             emp.setGold(0);
